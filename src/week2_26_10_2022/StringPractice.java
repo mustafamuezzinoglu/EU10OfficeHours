@@ -10,6 +10,8 @@ public class StringPractice {
         int number1=15;
 //        it prints the same result but its value is different
 
+        String brand_Category="msı" + "laptop";
+        System.out.println("brand_Category = " + brand_Category);
         String brand="msı";
         String category="laptop";
         System.out.println(brand+category);

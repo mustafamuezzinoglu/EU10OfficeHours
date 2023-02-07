@@ -14,7 +14,9 @@ public class Variables {
         int number4= 15201458;      //int must be -32768 to 32767
 
         long number5= 1520000000000L; // LONG must be -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+//        to tell to the compiler that this is a long, it must be a long
 
+//        int number = 3.1; it give error because it is a double
         float number6= 3.1F;
         long number7= 100;          //compiler bunu int olarak görür çünkü int range aralığında  hata vermez
 
@@ -27,6 +29,8 @@ public class Variables {
 
 char letter3=93; // ascitable a göre bu ] karakteridir
 int number10=93; // değeri 93 tür o nedenle aynı değildir
+        System.out.println("true");
+        System.out.println(letter3==number10 );
 
         System.out.println(letter3);
         System.out.println(number10);
