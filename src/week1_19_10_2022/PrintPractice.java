@@ -9,9 +9,9 @@ public class PrintPractice {
 
         System.out.println("one more line");
 
-//        this is a command
+//        this is a command single line
  /*
-
+this is a command multiple line
         here
         here
         AND HERE PROBLEM
