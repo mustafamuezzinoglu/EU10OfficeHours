@@ -11,7 +11,7 @@ public class forPractice {
         practice5();
         practice6();
     }
-
+//count 0 to 10
     public static void practice1() {
         for (int i = 0; i <= 10; i++) {
             System.out.print(i);
@@ -19,6 +19,7 @@ public class forPractice {
         }
         System.out.println("-----------------");
     }
+// write a program to calculate the sum of first 10 natural numbers
 
     public static void practice2() {
         int sum = 0;
@@ -30,6 +31,9 @@ public class forPractice {
         System.out.println("-----------------");
     }
 
+    //Write a program that prompts the user to input a positive integer.
+    // It should then print the multiplication table of that number.
+
     public static void practice3() {
       //  Scanner scan = new Scanner(System.in);
       //  int num = scan.nextInt();
@@ -39,7 +43,13 @@ public class forPractice {
         }
 
     }
-
+/* write the below star
+ *
+ **
+ ***
+ ****
+ *****
+ */
     public static void practice4() {
 
         for (int i = 1; i <= 5; i++) {
@@ -47,17 +57,23 @@ public class forPractice {
 
         }
     }
-
+/*
+          1
+        222
+      33333
+    4444444
+  555555555
+ */
 
     public static void practice5() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(" ".repeat(9 - i * 2 + 1) + String.valueOf(i+1).repeat(i*2+1));
+        for (int i = 0; i <=6; i++) {
+            System.out.println(" ".repeat(11 - i * 2 + 1) + String.valueOf(i+1).repeat(i*2+1));
         }
     }
     //reverse a string
     //home  -- >emoh
     public static void practice6(){
-        String word= "afatsuM";
+        String word= "home";
         String res="";
         for (int i =word.length()-1; i >=0 ; i--) {
             res+= word.charAt(i);
