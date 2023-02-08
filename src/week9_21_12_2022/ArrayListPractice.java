@@ -7,7 +7,7 @@ public class ArrayListPractice {
     public static void main(String[] args) {
         one();
         two();
-        // three();
+        three();
         four();
         five();
         six();
@@ -57,7 +57,7 @@ public class ArrayListPractice {
     public static void five() {
 //Write a Java program that creates an ArrayList of strings and adds five strings to the list. The program should then reverse the order of the elements in the list and print the resulting list to the console.
         ArrayList<String> list = new ArrayList<>();
-       list.addAll(Arrays.asList("Almanya  ", "Istanbul", "ceyhan", "Alice", "Bob"));
+        list.addAll(Arrays.asList("Almanya  ", "Istanbul", "ceyhan", "Alice", "Bob"));
 
         System.out.println("list = " + list);
         Collections.reverse(list);
@@ -79,20 +79,25 @@ public class ArrayListPractice {
     }
 
 
-
-
-/*
     public static void three() {
 //Write a java program that create an arraylist has random numbers, then check those number, if they are even, add again to the arraylist
-        ArrayList<Integer> randomNumbers = new ArrayList<>();
+        ArrayList<Integer> nums = new ArrayList<>();
         Random random = new Random();
+
         for (int i = 0; i < 10; i++) {
-            randomNumbers.add(random.nextInt(100));
-
+            nums.add(random.nextInt(100));
         }
-        System.out.println(randomNumbers);
-
+        System.out.println("nums = " + nums);
+        ArrayList<Integer> result = new ArrayList<>();
+        for (Integer each : nums) {
+            if (each % 2 == 0) {
+                result.add(each);
+            }
         }
-*/
+        nums.addAll(result);
+        System.out.println("nums even= " + nums);
+
+    }
+
 
 }
